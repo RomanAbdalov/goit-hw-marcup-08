@@ -1,16 +1,24 @@
 .test-container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+  
 }
 
 .flex {
     &-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+       display: flex;
+    flex-wrap: wrap; 
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+         }  
+
+    @media screen and (min-width: 768px) {
+            width: 354px;
+             }  
+}
 
     &-button {
         margin-bottom: 50px;
@@ -18,11 +26,24 @@
     }
 
     &-element {
-        width: 370px;
-    
+
         margin-right: 30px;
         margin-bottom: 30px;
         border: 1px solid #EEEEEE;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+             }  
+
+         @media screen and (min-width: 768px) {
+                width: 354px;
+                 }  
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+          }  
+
+         
 
     &:hover .foto-hover-text {
             opacity: 1;
@@ -39,6 +60,19 @@
     }
 
     .foto {
+
+    &_list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+
+            width: 768px;
+            }  
+
+            @media screen and (min-width: 1200px) {
+                width: 1200px;
+                }  
+    }    
     &-grant-text {
         position: relative; 
         overflow: hidden;    

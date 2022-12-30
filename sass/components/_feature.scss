@@ -1,6 +1,10 @@
  
 .feature-list {
-     display: flex;
+     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        
+     }
 
      & .title {
         color: $title-text-color ;
@@ -12,9 +16,27 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: $primery-text-color;
+
     }
 }
+
+.list__item {
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+       width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+}
+}
+
 .list__item::before {
+
     display: block;
     content:"";
     height: 120px;

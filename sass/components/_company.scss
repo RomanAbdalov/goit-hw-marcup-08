@@ -1,19 +1,54 @@
 .company {
     &__list {
-        display: flex;
+
+        @media screen and (min-width: 479px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 480px;
+         }
+
+         @media screen and (min-width: 768px) {
+            width: 768px;
+         }
+
+         @media screen and (min-width: 1200px) {
+            width: 1200px;
+         }
+
+       
         list-style: none;
         }
        
-    &__items:not(:last-child) {
+        
+       
+     &__items:not(:last-child) {
         margin-right: 30px;
      }
 
     &__link  {
+   
         display: flex;
+
+        @media screen and (min-width: 480px) {
+            width: 210px;
+            height: 92px;
+            margin-bottom: 30px;
+         }
+        
+        
+         @media screen and (min-width: 768px) {
+            width: 226px;
+         }
+
+         @media screen and (min-width: 1200px) {
+            width: 170px;
+         }
+
         justify-content: center;
         align-items: center;
-        width: 170px;
-        height: 92px;
+       
+        // width: 170px;
+        // height: 92px;
         color: #AFB1B8;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
