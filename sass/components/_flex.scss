@@ -3,21 +3,54 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  
-}
+
+   
+  }
+
+
+
+.button-list {   
+     @media screen and (min-width: 480px) {
+        width: 420px;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        
+        
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        
+        
+        
+    }
+    }
+
+    .foto__list {
+        @media screen and (min-width: 480px) {
+            width: 480px;
+    
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+    
+        }
+    }
 
 .flex {
     &-container {
-       display: flex;
-    flex-wrap: wrap; 
-
-    @media screen and (min-width: 480px) {
-        width: 450px;
-         }  
-
-    @media screen and (min-width: 768px) {
-            width: 354px;
-             }  
+        display: flex;
+        flex-wrap: wrap;
+        
+      
 }
 
     &-button {
@@ -27,25 +60,35 @@
 
     &-element {
 
-        margin-right: 30px;
-        margin-bottom: 30px;
+        
+        
         border: 1px solid #EEEEEE;
 
         @media screen and (min-width: 480px) {
             width: 450px;
-             }  
 
-         @media screen and (min-width: 768px) {
-                width: 354px;
-                 }  
+            margin-bottom: 30px;
+            
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+
+        }
+        &:not(:last-child) {
+           @media screen and (min-width: 768px) {
+            margin-right: 15px;
+            
+            
+           }
+        }
 
         @media screen and (min-width: 1200px) {
             width: 370px;
-          }  
+        
 
-         
-
-    &:hover .foto-hover-text {
+        }
+&:hover .foto-hover-text {
             opacity: 1;
 
             &::before {
@@ -60,19 +103,7 @@
     }
 
     .foto {
-
-    &_list {
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-
-            width: 768px;
-            }  
-
-            @media screen and (min-width: 1200px) {
-                width: 1200px;
-                }  
-    }    
+ 
     &-grant-text {
         position: relative; 
         overflow: hidden;    
@@ -121,12 +152,12 @@
         background-color: rgba(33, 150, 243, 0.9);
      }
     
-.flex-element:nth-child(3n) {
-    margin-right: 0px;
-}
-.flex-element:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-}
+// .flex-element:nth-child(3n) {
+//     margin-right: 0px;
+// }
+// .flex-element:nth-last-child(-n + 3) {
+//     margin-bottom: 0px;
+// }
 .flex-element:hover,
 .flex-elemeny:focus {
     border: 1px solid #EEEEEE;
