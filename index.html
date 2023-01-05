@@ -14,8 +14,8 @@
     <header>
         <div class="container main-nav">
         <a href="./index.html" lang="en" class="logo"><span class="logo__web">Web</span>Studio</a>
-       
-        <!-- <ul class="site-nav list">
+       <div class="menu-container" data-menu id="menu-container">
+        <ul class="site-nav list">
             <li class="item"><a href="#" class="link menu-link scale-none">Студія</a></li>
             <li class="item"><a href="portfolio.html" class="link menu-link">Портфоліо</a></li>
             <li class="item"><a href="#" class="link menu-link">Контакти</a></li>
@@ -26,9 +26,9 @@
             <li class="item"><a href="tel:+380961111111" class="link" ><svg class="site-tell__icon">
                 <use href="./img/second-moon.svg#icon-tell"></use>
             </svg>+38 096 111 11 11</a></li>
-         </ul> -->
-        
-         <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+         </ul>
+        </div>
+         <button type="button" class="menu-button is-open" aria-controls="menu-container" aria-expanded="false" data-menu-button>
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                 <use class="icon-menu" href="./img/symbol-close.svg#icon-mobile-menu"></use>
                 <use class="icon-close" href="./img/symbol-close.svg#icon-close-mobile"></use>
@@ -37,14 +37,14 @@
         </div>
          </header>
         <main>
-        <!-- <section class="overlay">
+        <section class="overlay">
                 <h1 class="hero-title">
                     ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br> ВАШОГО БІЗНЕСУ
                 </h1>
                 <button type="button" class="button list" data-open-modal>
                     Замовити послугу
                 </button>
-            </section> -->
+            </section>
         <section class="section">
             <div class="container">
             <h2 hidden>Особливості</h2>
@@ -347,7 +347,7 @@
         <script>
             (() => {
                 const menuBtnRef = document.querySelector('[data-menu-button]');
-
+                const mobileMenuRef = document.querySelector('[data-menu]')
             menuBtnRef.addEventListener('click', () => {
             const expanded =
             menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
@@ -355,7 +355,7 @@
             menuBtnRef.classList.toggle("is-open");
             menuBtnRef.setAttribute('aria-expanded', !expanded);
            
-            mobileMenuRef.classlist.toggle('is-open');
+            mobileMenuRef.classList.toggle("is-open");
             });
             })();
         </script>
