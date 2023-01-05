@@ -33,6 +33,7 @@ html {
  button {
     cursor: pointer;
  }
+
  body {
     background-color: $primary-bg-color ;
     color: $primery-text-color;
@@ -59,6 +60,29 @@ html {
         }
         
     }
+    
+    .menu-button {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        margin-left: 254px;
+        margin-right: 15px;
+    }
+
+    .menu-button .icon-menu {
+        display: none;
+    }
+
+    .menu-button.is-open .icon-menu {
+        display: block;
+    }
+
+    .menu-button.is-open .icon-close {
+        display: none;
+    }
+
     .general-footer-container {
         display: flex;
         width: 100%;

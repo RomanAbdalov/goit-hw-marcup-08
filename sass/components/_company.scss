@@ -5,6 +5,7 @@
             display: flex;
             flex-wrap: wrap;
             width: 480px;
+            gap: 30px;
          }
 
          @media screen and (min-width: 768px) {
@@ -21,18 +22,19 @@
        
         
        
-     &__items:not(:last-child) {
-        margin-right: 30px;
-     }
+   //   &__items:not(:last-child) {
+        
+   //   }
 
     &__link  {
    
         display: flex;
+        flex-direction: column;
 
         @media screen and (min-width: 480px) {
             width: 210px;
             height: 92px;
-            margin-bottom: 30px;
+            
          }
         
         
