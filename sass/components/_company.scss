@@ -31,6 +31,12 @@
         display: flex;
         flex-direction: column;
 
+        @media screen and (max-width: 480px) {
+           margin-bottom: 30px;
+            
+         }
+        
+
         @media screen and (min-width: 480px) {
             width: 210px;
             height: 92px;

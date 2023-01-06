@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="container main-nav">
         <a href="./index.html" lang="en" class="logo"><span class="logo__web">Web</span>Studio</a>
        <div class="menu-container" data-menu id="menu-container">
@@ -38,7 +38,94 @@
             </svg>
          </button>
         </div>
-         </header>
+         </header> -->
+
+         <header class="header container">
+  
+        
+            <a href="#" class="link"><span class="web">Web</span><span class="studio">Studio</span></a>
+                  <!--  -->
+                  <button type="button" class="menu-toggle js-open-menu" 
+                  aria-expanded="false"
+                  aria-controls="mobile-menu">
+              <svg class="menu__batton" height="40" width="40" aria-label="Перемикач мобільного меню">
+                  <use class="icon-close" href="./img/symbol-close.svg#icon-mobile-menu"></use>
+                  
+              </svg>
+          </button>
+                  <!--  -->
+                   <div class="header-menu">
+            <nav>
+                <ul class="nav list">
+                    <li><a class="nav__link link scale-none" href="#">Студія</a></li>
+                    <li><a class="nav__link link" href="#">Портфоліо</a></li>
+                    <li><a class="nav__link link" href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="contact list">
+                <li><a class="nav__contact link" href="#">info@devstudio.com</a><svg class="site-tel__icon">
+                    <use href="./img/second-moon.svg#icon-maill"></use> </svg></li>
+                <li><a class="nav__contact link" href="#">+38 096 111 11 11</a><svg class="site-tell__icon">
+                    <use href="./img/second-moon.svg#icon-tell"></use>
+                </svg></li>
+            </ul>
+        </div>
+      
+        </header>
+    
+        <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="button-toggle js-close-menu">
+            <svg class="button-toggle__icone " width="40" height="40">
+                  <use class="icon-menu" href="./img/symbol-close.svg#icon-close-mobile"></use> 
+            </svg>
+        </button>
+    
+        <nav>
+            <ul class="mob-menu list">
+                <li class="mob-item"><a href="./index.html" class="current link scale-none">Студія</a></li>
+                <li class="mob-item"><a href="./portfolio.html" class="current link">Портфоліо</a></li>
+                <li class="mob-item"><a href="" class="current link">Контакти</a></li>
+            </ul>
+        </nav>
+    
+        <div class="mob-menu__contacts ">
+            <ul class="list">
+           <li class="mob-item__contacts"> <a href="tel:+380961111111" class="tel link "></li>
+                <p>+38 096 111 11 11</p>
+            </a>
+    
+            <li class="mob-item__contacts"> <a href="mailto:info@devstudio.com" lang="en" class="email link">
+                <p>info@devstudio.com</p>
+            </a>  </li>
+        </ul>  
+        </div>
+    
+        <div>
+            <ul class="social list">
+                <li>
+                    <a href="#" class="soc link">Instagram</a>
+                </li>
+    
+                <li>
+                    <a href="#" class="soc link">Twitter</a>
+                </li>
+    
+                <li>
+                    <a href="#" class="soc link">Facebook</a>
+                </li>
+    
+                <li>
+                    <a href="#" class="soc link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+        <script src="./js/menu-btn.js"></script>
+
+
         <main>
         <section class="overlay">
                 <h1 class="hero-title">
@@ -345,6 +432,34 @@
             function logBackdropClick() {
                 console.log("Це клік в бедроп");
             }
+        </script>
+
+        <script>
+            (() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+    const toggleMenu = () => {
+      const isMenuOpen =
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+      const scrollLockMethod = !isMenuOpen
+        ? 'disableBodyScroll'
+        : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+    };
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+  
+    // Close the mobile menu on wider screens if the device orientation changes
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+  })();
         </script>
 
         <script>
