@@ -571,6 +571,11 @@ summary {
   margin-bottom: 32px;
 }
 
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: #2196F3;
+}
+
 .button-toggle {
   position: absolute;
   top: 10px;
@@ -790,8 +795,8 @@ summary {
   border-radius: 4px;
   padding: 10px 24px;
   min-width: 67px;
-  color: #212121;
-  background-color: #F5F4FA;
+  color: #ffffff;
+  background-color: #2196F3;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -1218,6 +1223,7 @@ summary {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -1227,12 +1233,6 @@ summary {
 }
 .logo__footer:hover, .logo__footer:focus {
   color: #2196F3;
-}
-@media screen and (min-width: 480px) {
-  .logo__footer {
-    margin-left: 163px;
-    margin-right: 163px;
-  }
 }
 
 .footer {
@@ -1264,6 +1264,9 @@ summary {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -1272,20 +1275,14 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__text {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-@media screen and (min-width: 480px) {
-  .footer__text {
-    margin-left: 40%;
-    margin-top: 60px;
-  }
 }
 .footer__icon {
   width: 20px;
@@ -1297,10 +1294,21 @@ summary {
           box-sizing: border-box;
   background-color: transparent;
   margin-right: 12px;
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1199px) {
+  .footer__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 
 .footer-soc__list {
@@ -1452,7 +1460,6 @@ summary {
 
 .footer__button {
   position: relative;
-  position: absolute;
   margin-top: 20px;
   border-radius: 4px;
   width: 200px;
@@ -1468,6 +1475,7 @@ summary {
 }
 .footer__button::after {
   content: "";
+  position: absolute;
   top: 13px;
   right: 28px;
   width: 24px;
@@ -1479,6 +1487,11 @@ summary {
   position: absolute;
   top: 10px;
   right: 62px;
+}
+
+.ppc-button {
+  margin-left: 25%;
+  margin-right: auto;
 }
 
 .head {

@@ -10,6 +10,8 @@
         line-height: 1.19;
         letter-spacing: 0.03em;
 
+        text-align: center;
+
         &:hover,
         &:focus {
             color: $accent-text-color;
@@ -19,8 +21,8 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1 );
      
-        @media screen and (min-width: 480px) {
-            margin-left: 163px ;
-            margin-right: 163px;
-        }
+        // @media screen and (min-width: 480px) {
+        //     margin-left: 163px ;
+        //     margin-right: 163px;
+        // }
 }

@@ -242,7 +242,10 @@
     margin-bottom: 32px;
   }
 
-
+.menu-toggle:hover, 
+.menu-toggle:focus{
+fill:$accent-text-color ;
+}
 
   .button-toggle {
     position: absolute;

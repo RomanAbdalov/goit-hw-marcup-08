@@ -32,6 +32,7 @@ html {
 
  button {
     cursor: pointer;
+    
  }
 
  body {
@@ -99,14 +100,18 @@ html {
         margin: 0 auto;
 
        
+
+        
+
+       
     }
     .footer-container {
         width: 100%;
         justify-content: center;
         align-items: center;
+}
 
-      
-    }
+
     .footer-container:not(:last-child) {
         margin-right: 70px;
     
