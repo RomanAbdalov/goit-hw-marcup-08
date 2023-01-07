@@ -2,23 +2,30 @@
 
 .site-tel {
     
-    margin-left: auto;
+   
     
 
     @media screen and (max-width: 767px) {
-        margin-top: 306px;
+        // margin-top: 306px;
         display: flex;
         flex-direction: column-reverse;
         gap: 32px;
     }
 
     @media screen and (min-width:768px) {
-        display: flex;
+        display: block;
+       
     }
 
-    & .link {
-        display: block;
-        // padding: 32px 0px;
+    @media screen and (min-width:1200px) {
+       display: flex;
+       flex-wrap: wrap;
+       
+    }
+
+    & .nav__contact {
+       
+        
 
         font-weight: 500;
         font-size: 14px;
@@ -39,9 +46,9 @@
 
             text-align: left;
              
-             
+            &:not(:last-child){
             color: $accent-text-color;
-            
+        }
         }
 
         &:hover,
@@ -51,25 +58,27 @@
         }
     }
 
-    &__icon {
-        fill: currentColor;
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-        background-position: center;
+    // & .item + .item {
 
+    // @media screen and (min-width: 768px) {
+    //      margin-left: 40px;
+    // }
+       
+    // }
+}
+.site-tel__icon {
+   
+        
         @media screen and (max-width:767px) {
             display: none;
-        }
-    }
-
-    & .item + .item {
-
-    @media screen and (min-width: 768px) {
-         margin-left: 40px;
-    }
-       
-    }
+       }
+       @media screen and (min-width:767px) {
+        fill: currentColor;
+        width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-position: center;
+   }
 }
 .site-tell__icon {
     fill: currentColor;
@@ -77,10 +86,11 @@
     height: 16px;
     margin-right: 10px;
     background-position: center;
+   
 
     @media screen and (max-width:767px) {
         display: none;
-
+       
     }
 }
 
