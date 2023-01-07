@@ -62,17 +62,19 @@ html {
         }
         
     }
+
     
-    .menu-toggle{
+    .menu-toggle {
         display: inline-flex;
-        margin: 0;
-        padding: 0;
+        
         border: none;
         background-color: transparent;
+        margin-left: 284px;
         
 
         @media screen and (min-width: 768px) {
             display: none;
+          
         }
     }
 
@@ -91,15 +93,19 @@ html {
     // }
 
     .general-footer-container {
-        display: flex;
+       
         width: 100%;
         padding: 0px 15px;
         margin: 0 auto;
+
+       
     }
     .footer-container {
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
+
+      
     }
     .footer-container:not(:last-child) {
         margin-right: 70px;

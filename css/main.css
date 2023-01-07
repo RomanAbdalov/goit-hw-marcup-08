@@ -61,10 +61,9 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 0;
-  padding: 0;
   border: none;
   background-color: transparent;
+  margin-left: 284px;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -73,9 +72,6 @@ body {
 }
 
 .general-footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
@@ -83,12 +79,6 @@ body {
 
 .footer-container {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer-container:not(:last-child) {
@@ -457,7 +447,7 @@ summary {
 @media screen and (min-width: 768px) {
   .site-tel {
     gap: 50px;
-    margin-left: 96px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -548,24 +538,9 @@ summary {
     margin-left: auto;
   }
 }
-.menu-toggle {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: none;
-  padding: 0;
-  background-color: white;
-}
-
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 .mob-menu {
@@ -635,6 +610,11 @@ summary {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   /* transition: transform 500ms linear; */
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
@@ -1237,6 +1217,11 @@ summary {
 .logo__footer:hover, .logo__footer:focus {
   color: #2196F3;
 }
+@media screen and (min-width: 480px) {
+  .logo__footer {
+    margin: 60px 163px 28px 250px;
+  }
+}
 
 .footer {
   background-color: #2F303A;
@@ -1251,6 +1236,11 @@ summary {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .footer__link {
+    margin-left: 20%;
+  }
 }
 .footer__link:hover, .footer__link:focus {
   color: #2196F3;
@@ -1278,6 +1268,12 @@ summary {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .footer__text {
+    margin-left: 40%;
+    margin-top: 60px;
+  }
 }
 .footer__icon {
   width: 20px;

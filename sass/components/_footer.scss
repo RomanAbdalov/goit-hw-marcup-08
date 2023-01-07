@@ -12,10 +12,16 @@
         letter-spacing: 0.03em;
         color:$primery-footer-text-color;
 
+        @media screen and (min-width: 480px) {
+            margin-left: 20%;
+        }
+
         &:hover,
         &:focus {
             color: $accent-text-color;
         }
+
+        
         }
 
     &__address {
@@ -25,6 +31,7 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: $primary-bg-color;
+
     
         transition-property: color;
         transition-duration: 250ms;
@@ -34,6 +41,11 @@
     &__text {
         margin-top: 10px;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 480px) {
+            margin-left: 40%;
+            margin-top: 60px;
+        }
         
         font-weight: 700;
         font-size: 14px;
