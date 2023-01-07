@@ -141,6 +141,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form__item {
+    display: block;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
@@ -148,6 +149,7 @@ line-height: 20px;
 cursor: pointer;
 
 padding-left: 16px;
+
 
 letter-spacing: 0.03em;
 
@@ -162,6 +164,8 @@ color: rgba(255, 255, 255, 0.6);
 .footer__button {
    position: relative;
    position: absolute;
+
+   margin-top: 20px;
 
     border-radius: 4px;
    
@@ -182,7 +186,7 @@ color: rgba(255, 255, 255, 0.6);
     &::after {
         content: "";
     
-        position: absolute;
+       
         top: 13px;
         right: 28px;
     

@@ -79,10 +79,21 @@ body {
 
 .footer-container {
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-container:not(:last-child) {
   margin-right: 70px;
+}
+
+.footer-form {
+  display: block;
+  display: inline-block;
 }
 
 .list {
@@ -1219,7 +1230,8 @@ summary {
 }
 @media screen and (min-width: 480px) {
   .logo__footer {
-    margin: 60px 163px 28px 250px;
+    margin-left: 163px;
+    margin-right: 163px;
   }
 }
 
@@ -1425,6 +1437,7 @@ summary {
 }
 
 .footer-form__item {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1440,6 +1453,7 @@ summary {
 .footer__button {
   position: relative;
   position: absolute;
+  margin-top: 20px;
   border-radius: 4px;
   width: 200px;
   height: 50px;
@@ -1454,7 +1468,6 @@ summary {
 }
 .footer__button::after {
   content: "";
-  position: absolute;
   top: 13px;
   right: 28px;
   width: 24px;

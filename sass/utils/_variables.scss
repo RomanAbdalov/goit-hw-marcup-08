@@ -102,8 +102,8 @@ html {
     }
     .footer-container {
         width: 100%;
-        // justify-content: center;
-        // align-items: center;
+        justify-content: center;
+        align-items: center;
 
       
     }
@@ -111,6 +111,13 @@ html {
         margin-right: 70px;
     
     }
+
+    .footer-form {
+        display: block;
+        display: inline-block;
+    }
+
+    
     
     .list {
         list-style: none;
