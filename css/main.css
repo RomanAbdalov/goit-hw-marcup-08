@@ -76,6 +76,16 @@ body {
   padding: 0px 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .general-footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .footer-container {
   -webkit-box-pack: center;
@@ -956,7 +966,7 @@ summary {
 }
 .work__items::before {
   position: absolute;
-  top: 73%;
+  top: 76%;
   content: "";
   width: 370px;
   height: 70px;
@@ -1336,6 +1346,12 @@ summary {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-div {
+    margin-right: 70px;
   }
 }
 
