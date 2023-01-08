@@ -99,6 +99,8 @@ html {
         padding: 0px 15px;
         margin: 0 auto;
 
+       justify-content: space-around;
+
     @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: space-between;

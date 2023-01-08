@@ -75,6 +75,8 @@ body {
   width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media screen and (min-width: 1200px) {
   .general-footer-container {
