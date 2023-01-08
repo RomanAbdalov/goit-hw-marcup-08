@@ -1130,7 +1130,19 @@ summary {
 .company__list {
   list-style: none;
 }
-@media screen and (min-width: 479px) {
+@media screen and (max-width: 479px) {
+  .company__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 480px) {
   .company__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1177,7 +1189,7 @@ summary {
 }
 @media screen and (max-width: 480px) {
   .company__link {
-    margin-bottom: 30px;
+    padding: 20px 0;
   }
 }
 @media screen and (min-width: 480px) {
