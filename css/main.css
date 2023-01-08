@@ -78,7 +78,6 @@ body {
 }
 
 .footer-container {
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -543,7 +542,6 @@ summary {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: auto;
   }
 }
 .menu-toggle {
@@ -701,6 +699,7 @@ summary {
 @media screen and (min-width: 768px) {
   .site-tel {
     display: block;
+    margin-left: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -710,6 +709,7 @@ summary {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: 305px;
   }
 }
 .site-tel .nav__contact {
@@ -1334,6 +1334,8 @@ summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1516,7 +1518,7 @@ summary {
 }
 
 .ppc-button {
-  margin-left: 25%;
+  margin-left: auto;
   margin-right: auto;
 }
 
