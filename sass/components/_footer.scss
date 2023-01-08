@@ -109,6 +109,14 @@
         
 }
 
+.footer-form {
+   
+ @media screen and (max-width: 767px) {
+        display: flex;
+    flex-wrap: wrap; 
+    }
+}
+
 .footer-flex {
     @media screen and (min-width: 768px) {
         display: flex;
@@ -119,6 +127,7 @@
 .footer-div {
     @media screen and (min-width: 1200px) {
        margin-right: 70px;
+
     }
 }
 
