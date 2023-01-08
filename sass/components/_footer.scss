@@ -2,7 +2,10 @@
     background-color: $primary-footer-color;
     padding: 60px 0px;
 
-    
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        
+    }
 
     &__link {
         margin: 12px 0px;
@@ -14,8 +17,10 @@
         letter-spacing: 0.03em;
         color:$primery-footer-text-color;
 
+        text-align: center;
+
         @media screen and (min-width: 480px) {
-            margin-left: 20%;
+           text-align: center;
         }
         
 
@@ -95,7 +100,20 @@
         }
 
          }
+
+         .footer-form {
+            @media screen and (min-width: 768px) {
+                justify-content: center;
+            }
+         }
         
+}
+
+.footer-flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        
+    }
 }
 
 .footer-soc {
@@ -104,7 +122,8 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
-
+      
+    
         
     }
 
@@ -235,3 +254,4 @@ color: rgba(255, 255, 255, 0.6);
     margin-left: 25%;
     margin-right: auto;
 }
+
